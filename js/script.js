@@ -70,7 +70,6 @@
 }());
 
 
-
 // For the Slider of the food item 
 const productContainers = Array.from(...document.querySelectorAll('.product-container'));
 const nxtBtn = Array.from(...document.querySelectorAll('.nxt-btn'));
