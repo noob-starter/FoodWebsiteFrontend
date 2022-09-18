@@ -1,0 +1,782 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********** Basic HTML5 Styling  **********/
+html {
+  font-size: auto;
+  scroll-behavior: smooth;
+}
+
+
+/********** Basic Styling of Body **********/
+body {
+  --primary-text-color: #F0FAF7;
+  --secondary-text-color: #F2F2F2;
+  --primary-background-color: #1AC073;
+  --primary-button-color: #2EBF91;
+  --secondary-button-color: #F3BA00;
+
+  font-family: 'Rubik';
+  text-transform: capitalize;
+}
+
+
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+
+/******************************** Section 1 ****************************/
+.section1 {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2rem 2rem;
+
+}
+
+.section1>.left {
+  display: flex;
+  float: left;
+  width: 40%;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding-left: 6rem;
+}
+
+.section1>.right {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  float: right;
+  color: var(--secondary-text-color);
+}
+
+.section1>.right h2 {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.section1>.right>.right-logo {
+  margin-left: 15rem;
+}
+
+.section1>.right>.right-logo img {
+  padding-left: 2rem;
+}
+
+
+/************************* Section 2 *****************************/
+.section2 {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 3rem 2rem;
+  text-transform: none;
+}
+
+.section2>.left {
+  float: left;
+  width: 50%;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 8rem;
+  padding-right: 2rem;
+}
+
+.section2>.left p {
+  padding-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.section2>.left>.search {
+  outline: 0;
+  float: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.section2>.left>.search>.textbox {
+  outline: 0;
+  height: 50px;
+  width: 320px;
+  padding: 0 16px;
+  background-color: white;
+  color: var(--primary-text-color);
+  border: 0;
+  float: left;
+  font-size: 1rem;
+  text-justify: auto;
+  border-radius: 15px 0 0 15px;
+  padding-left: 3rem;
+}
+
+.section2>.left>.search>.textbox:focus {
+  outline: 0;
+  background-color: white;
+}
+
+.section2>.left>.search>.button {
+  outline: 0;
+  background: none;
+  background-color: var(--secondary-button-color);
+  float: left;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  border: 0;
+  color: white;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.2rem;
+  text-rendering: auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color .4s ease;
+  border-radius: 0 15px 15px 0;
+}
+
+.section2>.left>.search>.button:hover {
+  background-color: var(--primary-background-color);
+}
+
+.section2>.right {
+  width: 50%;
+  float: right;
+  margin-top: 5rem;
+}
+
+
+
+.section2>.popup {
+  width: 90%;
+  height: 90%;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  font-weight: bolder;
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.section2>.popup h2 {
+  font-size: 2rem;
+  margin: 30px 0 10px;
+  margin-top: 12%;
+}
+
+.section2>.popup img {
+  position: relative;
+  top: 20%;
+  width: 200px;
+  height: 200px;
+  filter: invert(0.2);
+}
+
+.section2>.popup input {
+  width: 20%;
+  height: 10%;
+  margin-top: 5%;
+  padding: 10px 0;
+  background: var(--primary-background-color);
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 1rem;
+  color: #F2F2F2;
+  font-weight: bolder;
+}
+
+
+/***************************** Section 3 **************************/
+.section3 {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  text-transform: none;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.section3>h1 {
+  margin-left: 0rem;
+}
+
+#mainContainer {
+  width: 100%;
+  height: auto;
+  padding-top: 3rem;
+  padding-left: 8rem;
+}
+
+.blocks {
+  width: 250px;
+  background-color: whitesmoke;
+  height: 280px;
+  border: 0px solid black;
+  float: left;
+  margin-bottom: 4rem;
+  margin-right: 4rem;
+  border-radius: 15px;
+  padding: 0;
+}
+
+.blocks .pizza {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+
+.blocks .plus {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-left: 13rem;
+  margin-top: -1.4rem;
+}
+
+.blocks .button1 {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  float: left;
+  margin-left: -6.5rem;
+  margin-top: 2.5rem;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.blocks .button2 {
+  position: relative;
+  width: 80px;
+  height: 20px;
+  float: left;
+  margin-left: -3.5rem;
+  margin-top: 2.5rem;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.blocks h1 {
+  position: relative;
+  font-size: 0.8rem;
+  float: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+
+.blocks h2 {
+  position: relative;
+  font-size: 0.8rem;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+
+
+
+/******************* Section 4 *******************/
+.section4 {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 1000px;
+  text-transform: none;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1100px;
+  font-weight: bolder;
+}
+
+.section4>.buttonX {
+  background: var(--primary-button-color);
+  background-image: linear-gradient(to bottom, var(--primary-button-color), var(--primary-button-color));
+  position: absolute;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  top: 55%;
+  border: 0;
+  z-index: -1;
+  visibility: visible;
+  left: 45%;
+  z-index: 200;
+}
+
+
+.section4>.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+
+.section4>.pre-btn {
+  left: 8rem;
+  transform: rotate(180deg);
+}
+
+.section4>.nxt-btn {
+  right: 8rem;
+}
+
+.section4>.pre-btn img,
+.nxt-btn img {
+  opacity: 0.3;
+}
+
+.section4>.nxt-btn img {
+  opacity: 1;
+}
+
+.section4>.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.section4>.nxt-btn:hover img {
+  opacity: 0.3;
+}
+
+.product-container {
+  position: relative;
+}
+
+#sliderContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-left: 20rem;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  z-index: 0;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-gap: 10px;
+}
+
+#sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.product-container>.sliders {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  border: 1px solid black;
+  float: left;
+  margin-bottom: 4rem;
+  margin-right: 4rem;
+  border-radius: 15px;
+  padding: 0;
+
+}
+
+.product-container>.sliders .pizza {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+
+.product-container>.sliders .plus,
+.minus {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-left: 13rem;
+  margin-top: -1.4rem;
+  overflow: hidden;
+}
+
+.product-container>.sliders .minus {
+  margin-left: 10rem;
+}
+
+.product-container>.sliders span {
+  position: relative;
+  font-size: 1rem;
+  left: 1rem;
+  top: 0.5rem;
+  z-index: -1;
+}
+
+.product-container>.sliders .button1 {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  float: left;
+  margin-left: -6.5rem;
+  margin-top: 2.5rem;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.product-container>.sliders .button2 {
+  position: relative;
+  width: 80px;
+  height: 20px;
+  float: left;
+  margin-left: -3.5rem;
+  margin-top: 2.5rem;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.product-container>.sliders h1 {
+  position: relative;
+  font-size: 0.8rem;
+  float: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+
+.product-container>.sliders h2 {
+  position: relative;
+  font-size: 0.8rem;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+
+.section4>.popupdish {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  font-weight: bolder;
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+  z-index: 99;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.section4>.popupdish h2 {
+  font-size: 2rem;
+  margin: 30px 0 10px;
+  margin-top: 2%;
+}
+
+.section4>.popupdish .input1 {
+  width: 15%;
+  height: 10%;
+  margin-top: 5%;
+  padding: 10px 0;
+  background: white;
+  border: 1;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  color: var(--primary-background-color);
+  font-weight: bolder;
+}
+
+.section4>.popupdish .input2 {
+  width: 15%;
+  height: 10%;
+  margin-top: 5%;
+  padding: 10px 0;
+  background: var(--primary-background-color);
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 1rem;
+  color: #F2F2F2;
+  font-weight: bolder;
+}
+
+
+
+.section4>.popupdish .preference {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.section4>.popupdish .preference label {
+  position: relative;
+  top: -60%;
+  left: 2%;
+  text-align: start;
+  font-size: 1rem;
+}
+
+.section4>.popupdish .preference .input3 {
+  position: relative;
+  left: 2%;
+  top: -60%;
+  margin: 0.5rem;
+  padding-left: 2rem;
+  background-color: var(--primary-text-color);
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  border: 0;
+}
+
+/****************** Section 5 ********************/
+.section5 {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  text-transform: none;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1900px;
+  font-weight: bolder;
+}
+
+.section5 h1 {
+  font-size: 2.5rem;
+}
+
+.section5 p {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.section5 .buttonImage {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+
+.section5 img {
+  position: relative;
+  top: 10%;
+  left: 0%;
+  z-index: 1;
+}
+
+.section5>.coloredDiv {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 300px;
+  background-color: var(--primary-background-color);
+  opacity: 0.4;
+}
+
+
+/************************ Section 6 ***********************/
+.section6 {
+  background-color: white;
+  position: absolute;
+  width: 95%;
+  height: 700px;
+  text-transform: none;
+  font-size: 1rem;
+  margin-top: 2700px;
+  font-weight: 100;
+  margin-left: 2rem;
+  padding: 2rem;
+}
+
+.section6 .left {
+  float: left;
+  width: 60%;
+}
+
+.section6>.left h1 {
+  font-size: 2rem;
+  padding-left: 2rem;
+  font-weight: 100;
+}
+
+.section6>.left p {
+  padding-left: 2rem;
+  padding-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+
+.section6 .right {
+  float: left;
+  width: 30%;
+}
+
+.section6>.right img {
+  margin-top: 0rem;
+  margin-left: -5rem;
+  width: 150%;
+  height: 150%;
+}
+
+
+.section6 .input1,
+.input2,
+.input3 {
+  position: relative;
+  margin: 2rem;
+  padding: 1.5rem;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.section6 .input3 {
+  width: 670px;
+  height: 200px;
+  text-align: left;
+  text-justify: auto;
+}
+
+.section6 .input3::placeholder {
+  position: relative;
+  top: -30%;
+}
+
+.section6 .button {
+  outline: 0;
+  position: relative;
+  background: none;
+  background-color: var(--primary-background-color);
+  float: left;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border: 0;
+  color: white;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.2rem;
+  text-rendering: auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color .4s ease;
+  border-radius: 10px;
+  left: 2rem;
+}
+
+
+
+/*************************** Section 7 **************************/
+
+.section7 {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 2rem 2rem;
+  position: absolute;
+  margin-top: 3300px;
+}
+
+.section7>.left {
+  display: flex;
+  float: left;
+  width: 40%;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding-left: 6rem;
+}
+
+.section7>.right {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  float: right;
+  color: var(--secondary-text-color);
+}
+
+.section7>.right h2 {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.section7>.right>.right-logo {
+  margin-left: 15rem;
+}
+
+.section7>.right>.right-logo img {
+  padding-left: 2rem;
+}
+
+
+.section7 .line {
+  position: absolute;
+  border: white;
+  background-color: rgb(255, 255, 255);
+  width: 81%;
+  height: 1%;
+  top: 80%;
+  left: 8.5%;
+}

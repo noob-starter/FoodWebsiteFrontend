@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <title>JTGeats</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <section class="section1">
+
+        <div class="left">
+            <h1><b>JTGeats </b></h1>
+        </div>
+
+        <div class="right">
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Menu</h2>
+            <h2>Blog</h2>
+            <h2>Contact</h2>
+
+            <div class="right-logo">
+                <img src="/Assignment Assest/Assets/icons/Search.svg" alt="Search Image SVG">
+                <img src="/Assignment Assest/Assets/icons/Cart.svg" id="cartImage" alt="Cart Image SVG"
+                    onclick="openPopup()">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section2">
+        <div class="left">
+            <h1>Authentic Home food in India</h1>
+            <p>JTGeats is a courier service in which authentic home cook food is delivered to a customer.</p>
+
+
+            <div class="search">
+                <input type="text" class="textbox" placeholder="Search food you love">
+                <input title="Search" value="Search" type="submit" class="button">
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="/Assignment Assest//Assets/icons/cooking.svg">
+        </div>
+
+        <div class="popup" id="popupWindow">
+            <img src="/Assignment Assest//Assets/icons/Cart.svg">
+            <h2>Cart is Empty</h2>
+            <input type="button" placeholder="Back to Menu" value="Back to Menu" onclick="closePopup()">
+        </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Section 3 -->
+    <section class="section3" id="mainContainer">
+        <h1> Home Kitchen</h1>
+    </section>
+
+
+    <!-- Section 4 -->
+    <section class="section4">
+        <span>Popular Items</span>
+
+        <button class="pre-btn"><img src="Assignment Assest/Assets/icons/play.svg" alt=""></button>
+        <button class="nxt-btn"><img src="Assignment Assest/Assets/icons/play.svg" alt=""></button>
+
+        <div class="product-container" id="sliderContainer">
+            <div class="sliders">
+                <img src="Assignment Assest\\Assets\\images\\dish1_9_s1.png" class="pizza">
+                <h1>Home Made Pizza</h1>
+                <h2>₹ 199</h2>
+                <span>1</span>
+                <input type="text" class="button1" id="star" placeholder="★  4.7" disabled>
+                <input type="text" class="button2" placeholder="50-79 min" disabled>
+                <img src="Assignment Assest\\Assets\\icons\\minus.svg" class="minus">
+                <img src="Assignment Assest\\Assets\\icons\\plus.svg" class="plus">
+
+            </div>
+
+            <div class="sliders">
+                <img src="Assignment Assest\\Assets\\images\\s2.png" class="pizza">
+                <h1>Home Made Pizza</h1>
+                <h2>₹ 199</h2>
+                <input type="text" class="button1" id="star" placeholder="★  4.7" disabled>
+                <input type="text" class="button2" placeholder="50-79 min" disabled>
+                <img src="Assignment Assest\\Assets\\icons\\plus.svg" class="plus">
+            </div>
+
+            <div class="sliders">
+                <img src="Assignment Assest\\Assets\\images\\s3.png" class="pizza">
+                <h1>Home Made Pizza</h1>
+                <h2>₹ 199</h2>
+                <input type="text" class="button1" id="star" placeholder="★  4.7" disabled>
+                <input type="text" class="button2" placeholder="50-79 min" disabled>
+                <img src="Assignment Assest\\Assets\\icons\\plus.svg" class="plus">
+            </div>
+
+
+        </div>
+
+        <div class="popupdish" id="popupdish">
+            <h2>Request a Dish</h2>
+            <div class="preference">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="input3" placeholder="Enter name of the dish" required>
+                <label for="upload">Upload an image</label>
+                <input type="text" name="upload" id="upload" class="input3" placeholder="Paste a URL">
+            </div>
+            <input type="button" class="input1" placeholder="Cancel" value="Cancel" onclick="closePopupDish()">
+            <input type="button" class="input2" placeholder="Submit Request" value="Submit Request"
+                onclick="closePopupDish()">
+        </div>
+
+        <input type="button" class="buttonX" placeholder="Request a Dish" value="Request a Dish"
+            onclick="openPopupDish()">
+
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section5">
+        <h1> We are providing best<br> home cooked food delivery service.</h1>
+        <p>Away from home and carving the tasty homemade recipes?<br>
+            Choose from a section of our delicious home cooked dishes</p>
+
+        <img src="http://bobbyhadz.com/images/blog/javascript-show-div-on-select-option/banner.webp">
+        <img src="/Assignment Assest/Assets/icons/play.svg" class="buttonImage">
+        <div class="coloredDiv"></div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="section6">
+        <section class="left">
+            <h1>Do you have a question<br> or want to become a seller?</h1>
+            <p>Fill this form and our manager will contact you next 48 hours.</p>
+            <input type="text" class="input1" placeholder="Your Name">
+            <input type="text" class="input2" placeholder="Your e-mail">
+            <input type="text" class="input3" placeholder="Your message">
+            <input type="button" class="button" placeholder="submit" value="Submit">
+        </section>
+
+
+
+        <section class="right">
+            <img src="/Assignment Assest/Assets/icons/Food delivery illustration.svg">
+        </section>
+    </section>
+
+    <section class="section7">
+
+        <div class="left">
+            <h1><b>JTGeats </b></h1>
+        </div>
+
+        <div class="right">
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Menu</h2>
+            <h2>Blog</h2>
+            <h2>Contact</h2>
+
+            <div class="right-logo">
+                <img src="/Assignment Assest/Assets/icons/Facebook.svg" alt="Search Image SVG">
+                <img src="/Assignment Assest/Assets/icons/instagram.svg" alt="Cart Image SVG">
+            </div>
+        </div>
+
+        <canvas id="myCanvas" class="line">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+    </section>
+
+
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
